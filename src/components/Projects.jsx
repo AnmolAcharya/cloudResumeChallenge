@@ -20,8 +20,8 @@ const projects = [
     achievements: [
       'Engineered a multiplayer crossword game handling concurrent players with real-time WebSocket synchronization, reducing message latency by 40%',
       'Achieved 95% unit test coverage and improved game function runtime by 60% through optimized state management',
-      'Designed a modular full-stack architecture using Java, Maven, Spring Boot, REST APIs, and JavaFX for cross-platform deployment',
-      'Improved Agile sprint velocity by 20% by integrating CI/CD pipelines and implementing Scrum practices for collaborative development'
+      'Designed a modular full-stack architecture using Java, Maven, REST APIs, and JavaFX for cross-platform deployment',
+      'Improved Agile sprint velocity by 20% and implementing Scrum practices for collaborative development'
     ]
   },
   {
@@ -29,7 +29,7 @@ const projects = [
     type: 'Cloud-Native Application',
     githubLink: 'https://github.com/AnmolAcharya/Job-Tracker-AWS-SERVERLESS-CRUD-APP-',
     achievements: [
-      'Built a fully serverless job tracking platform with AWS Lambda, DynamoDB, Cognito, and API Gateway, handling 250+ user sessions weekly',
+      'Built a fully serverless job tracking platform with AWS Lambda, DynamoDB, Cognito, and API Gateway, to handle users flux',
       'Reduced backend overhead by 80% using event-driven architecture and modular Lambda functions',
       'Integrated OAuth2.0 login via AWS Cognito, enabling secure and scalable authentication with session management',
       'Leveraged the Serverless Framework to deploy infrastructure in <3 minutes and enabled seamless CRUD operations with 99.9% uptime'
