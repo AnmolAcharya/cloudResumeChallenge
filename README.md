@@ -4,31 +4,56 @@
 
 This project is my implementation of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/), a hands-on initiative that demonstrates core cloud engineering skills through the deployment of a personal resume website on AWS.
 
----
-## Key Components
+## Engineering Considerations
 
-- **Frontend**: Static resume website hosted on **Amazon S3**
-- **CDN**: Content served globally via **AWS CloudFront**
-- **Custom Domain**: Purchased from **Namecheap**, pointed to **CloudFront**
-- **API Layer**: Built using **API Gateway**, integrated with **AWS Lambda**
-- **Backend Function**: AWS **Lambda** (Python) function used to update and fetch visitor count
-- **Database**: **Amazon DynamoDB** used to store persistent visitor data
+## How can this solution scale?
 
----
-##  Services Used
-
-- Amazon S3  
-- AWS CloudFront  
-- AWS API Gateway  
-- AWS Lambda  
-- Amazon DynamoDB  
-- Namecheap (Domain Management)  
-- GitHub Actions (CI/CD)
+The architecture is serverless and fully managed, allowing each component (S3, CloudFront, API Gateway, Lambda, DynamoDB) to automatically scale with demand. This ensures the solution can handle high traffic without manual intervention.
 
 ---
 
-## 🌐 Live Website
+## How is it made highly available?
 
-🔗 [Visit Resume](https://swe.anmolacharya.xyz)
+All AWS services used are regionally or globally distributed:
+- S3 and DynamoDB offer multi-AZ availability
+- API Gateway and Lambda are fault-tolerant
+- CloudFront serves content from global edge locations
+Together, this ensures resilience and uptime across geographies.
+
+---
+
+## How is the solution cost-optimized?
+
+- Serverless architecture avoids idle costs
+- S3 and DynamoDB are pay-as-you-go
+- API Gateway and Lambda only incur charges on usage
+Additional optimizations include CloudFront caching and avoiding over-provisioning compute/storage resources.
+
+---
+
+## How is the solution secured and how can it be improved?
+
+- IAM roles restrict resource access (least privilege)
+- S3 access is restricted via CloudFront OAC
+- HTTPS enforced via CloudFront
+- DNS managed securely via Route 53 + domain registrar
+
+To improve security further:
+- Integrate WAF with CloudFront
+- Use Cognito or API key auth for API Gateway
+- Enable logging and monitoring via CloudWatch
+
+---
+
+##Infrastructure as Code (IaC)
+
+Terraform is used for automating the provisioning of AWS resources, ensuring:
+- Reproducibility
+- Version control
+- Easier collaboration and deployment
+
+This also supports scaling, security, and cost-control through consistent infrastructure practices.
+
+
 
 
