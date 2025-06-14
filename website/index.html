@@ -32,15 +32,20 @@
         <!-- Education Section -->
         <section class="education">
             <h2>Education</h2>
-            <div class="education-item">
-                <h3>University of Texas at Arlington</h3>
-                <div class="date">May 2026</div>
-                <p>Bachelor of Science in Computer Science</p>
-                <div class="location">Arlington, Texas</div>
-                <ul>
-                    <li>GPA: 3.92/4.00</li>
-                    <li>Relevant Coursework: Data Structures and Algorithms, Software Testing, Artificial Intelligence, Database Management, Object-Oriented Programming, Operating Systems, Computer Networks, Computer Graphics</li>
-                </ul>
+            <div class="education-item education-flex">
+                <div class="education-content">
+                    <h3>University of Texas at Arlington</h3>
+                    <div class="date">May 2026</div>
+                    <p>Bachelor of Science in Computer Science</p>
+                    <div class="location">Arlington, Texas</div>
+                    <ul>
+                        <li>GPA: 3.92/4.00</li>
+                        <li>Relevant Coursework: Data Structures and Algorithms, Software Testing, Artificial Intelligence, Database Management, Object-Oriented Programming, Operating Systems, Computer Networks, Computer Graphics</li>
+                    </ul>
+                </div>
+                <div class="education-logo-container">
+                    <img src="public/UTA.jpg" alt="UTA Logo" class="education-logo">
+                </div>
             </div>
         </section>
 
@@ -129,16 +134,37 @@
         <!-- Experience Section -->
         <section class="experience">
             <h2>Experience</h2>
-            <div class="experience-item">
-                <h3>Undergraduate Research Assistant – SPRLab</h3>
-                <div class="date">February 2022 – Present</div>
-                <div class="location">University of Texas at Arlington | Arlington, Texas</div>
-                <ul>
-                    <li>Contributing to interdisciplinary research at the Security and Privacy Research Lab (SPRLab), under Dr. Shirin Nilizadeh.</li>
-                    <li>Analyzing scam victim narratives on social media using AI/ML, NLP, and behavioral analysis to enhance online safety.</li>
-                    <li>Leveraging large-scale data pipelines, annotated datasets, and GPT-based thematic classification to uncover privacy trends.</li>
-                    <li>Exploring intersections of cybersecurity, psychology, and AI to understand digital manipulation and user vulnerability.</li>
-                </ul>
+            <div class="experience-item experience-flex">
+                <div class="experience-content">
+                    <h3>Undergraduate Research Assistant – SPRLab</h3>
+                    <div class="date">February 2025 – Present</div>
+                    <div class="location">University of Texas at Arlington | Arlington, Texas</div>
+                    <ul>
+                        <li>Contributing to interdisciplinary research at the Security and Privacy Research Lab (SPRLab), under Dr. Shirin Nilizadeh.</li>
+                        <li>Analyzing scam victim narratives on social media using AI/ML, NLP, and behavioral analysis to enhance online safety.</li>
+                        <li>Leveraging large-scale data pipelines, annotated datasets, and GPT-based thematic classification to uncover privacy trends.</li>
+                        <li>Exploring intersections of cybersecurity, psychology, and AI to understand digital manipulation and user vulnerability.</li>
+                    </ul>
+                </div>
+                <div class="experience-logo-container">
+                    <img src="public/SPRLab.jpg" alt="SPRLab Logo" class="experience-logo">
+                </div>
+            </div>
+            <div class="experience-item experience-flex">
+                <div class="experience-content">
+                    <h3>AI/ML Fellow – Break Through Tech</h3>
+                    <div class="date">May 2025 - Present</div>
+                    <div class="location">Cornell Tech | Virtual</div>
+                    <ul>
+                        <li>Selected as an AI/ML fellow through Break Through Tech's Virtual AI program at Cornell Tech.</li>
+                        <li>Engaged in advanced AI/ML training and research projects under the guidance of Cornell Tech faculty.</li>
+                        <li>Collaborated with peers on cutting-edge AI applications and machine learning solutions.</li>
+                        <li>Developed practical skills in implementing AI/ML solutions for real-world problems.</li>
+                    </ul>
+                </div>
+                <div class="experience-logo-container">
+                    <img src="public/BreakThroughTech.png" alt="Break Through Tech Logo" class="experience-logo">
+                </div>
             </div>
         </section>
 
@@ -146,47 +172,64 @@
         <section class="projects">
             <h2>Projects</h2>
             <div class="project-item">
-                <h3>Chagas Disease Detection System | <a href="https://github.com/username/project" target="_blank">GitHub</a></h3>
+                <h3>Parasite Detection System | <a href="https://github.com/AnmolAcharya/Chagas_Disease_Detection" target="_blank">GitHub</a></h3>
                 <div class="project-type">AI Full-Stack Application</div>
-                <ul>
-                    <li>Developed an AI-based web app to detect Trypanosoma cruzi parasites in blood smear images, achieving 92%+ detection accuracy using YOLOv8.</li>
-                    <li>Built a FastAPI backend to process 100+ image inferences per minute with <1s average response time.</li>
-                    <li>Integrated a React frontend with dynamic bounding-box visualization, boosting diagnostic clarity for researchers.</li>
-                    <li>Containerized the solution using Docker and designed architecture for cloud deployment with scalability in mind.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>The Word Search Game (TWSG) | <a href="https://github.com/username/project" target="_blank">GitHub</a> | <a href="#" target="_blank">Demo</a></h3>
-                <div class="project-type">Full-Stack Java Game Development</div>
-                <ul>
-                    <li>Engineered a multiplayer crossword game handling 100+ concurrent players with real-time WebSocket synchronization, reducing message latency by 40%.</li>
-                    <li>Achieved 95% unit test coverage and improved game function runtime by 60% through optimized state management.</li>
-                    <li>Designed a modular full-stack architecture using Java, Maven, Spring Boot, REST APIs, and JavaFX for cross-platform deployment.</li>
-                    <li>Improved Agile sprint velocity by 20% by integrating CI/CD pipelines and implementing Scrum practices for collaborative development.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Serverless Job Tracker (AWS) | <a href="https://github.com/username/project" target="_blank">GitHub</a></h3>
-                <div class="project-type">Cloud-Native Application</div>
-                <ul>
-                    <li>Built a fully serverless job tracking platform with AWS Lambda, DynamoDB, Cognito, and API Gateway, handling 250+ user sessions weekly.</li>
-                    <li>Reduced backend overhead by 80% using event-driven architecture and modular Lambda functions.</li>
-                    <li>Integrated OAuth2.0 login via AWS Cognito, enabling secure and scalable authentication with session management.</li>
-                    <li>Leveraged the Serverless Framework to deploy infrastructure in <3 minutes and enabled seamless CRUD operations with 99.9% uptime></3>.</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>TravelAI – Smart Destination Explorer | <a href="https://github.com/username/travelai" target="_blank">GitHub</a></h3>
-                <div class="project-type">AI-Powered Travel Recommendation</div>
-                <img src="public/Awsss.png" alt="TravelAI UI Screenshot" style="width:100%; border-radius:8px; margin:0.5rem 0;">
-                <ul>
-                    <li>Designed an AI-integrated travel planner using ReactJS and Tailwind CSS to recommend global destinations.</li>
-                    <li>Utilized GPT-based filtering to personalize location suggestions based on user mood, budget, and activities.</li>
-                    <li>Created a visually immersive UI showcasing attractions with real-time data and photo galleries.</li>
-                    <li>Deployed the frontend using Vite and hosted the project on Netlify with CI/CD automation via GitHub Actions.</li>
-                </ul>
+                <div class="project-images">
+                    <img src="public/parasiteProject.png" alt="Parasite Detection UI" class="project-image focus-bottom">
+                    <img src="public/parasiteDetect.png" alt="Parasite Detection Results" class="project-image">
+                </div>
+                <p>AI-powered web application for detecting Trypanosoma cruzi parasites in blood smear images with 92%+ accuracy using YOLOv8, featuring real-time inference and dynamic visualization.</p>
             </div>
 
+            <div class="project-item">
+                <h3>Cloud Resume Challenge | <a href="https://github.com/AnmolAcharya/CCRes" target="_blank">GitHub</a> | <a href="https://anmolacharya.me" target="_blank">Live Demo</a></h3>
+                <div class="project-type">Cloud-Native Full-Stack Application</div>
+                <div class="project-images">
+                    <img src="public/CloudResumearch.png" alt="Cloud Resume Architecture" class="project-image">
+                    <img src="public/AWS.png" alt="AWS Services" class="project-image">
+                </div>
+                <p>Serverless resume website built with AWS services, featuring CI/CD automation, visitor counter, and global CDN distribution with enterprise-grade security.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>The Word Search Game (TWSG) | <a href="https://github.com/AnmolAcharya/Full-Stack-Crossword-Game" target="_blank">GitHub</a> | <a href="#" target="_blank">Demo</a></h3>
+                <div class="project-type">Full-Stack Java Game Development</div>
+                <div class="project-images">
+                    <img src="public/WordRushStart.png" alt="Word Rush Game Start" class="project-image">
+                    <img src="public/WordRush.png" alt="Word Rush Gameplay" class="project-image">
+                </div>
+                <p>Multiplayer crossword game with real-time WebSocket synchronization, supporting concurrent players and achieving 95% unit test coverage.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Serverless Job Tracker (AWS) | <a href="https://github.com/AnmolAcharya/Job-Tracker-AWS-SERVERLESS-CRUD-APP-" target="_blank">GitHub</a></h3>
+                <div class="project-type">Cloud-Native Application</div>
+                <div class="project-images">
+                    <img src="public/JobTrackerarch.png" alt="Job Tracker Architecture" class="project-image">
+                    <img src="public/JobTrackerTheme.png" alt="Job Tracker UI" class="project-image">
+                </div>
+                <p>Fully serverless job tracking platform built with AWS services, handling 250+ weekly user sessions with OAuth2.0 authentication and 99.9% uptime.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>TravelAI – Travel Companion | <a href="https://github.com/AnmolAcharya/Companion_TravelAI" target="_blank">GitHub</a></h3>
+                <div class="project-type">AI-Powered Travel Recommendation</div>
+                <div class="project-images">
+                    <img src="public/TravelAI.png" alt="TravelAI Main Interface" class="project-image">
+                    <img src="public/TravelAIplaces.png" alt="TravelAI Places" class="project-image">
+                </div>
+                <p>AI-integrated travel planner using ReactJS and GPT-based filtering to provide personalized destination recommendations based on user preferences.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>Sirixa - AI Voice Assistant | <a href="https://github.com/AnmolAcharya/amigofrontend?tab=readme-ov-file" target="_blank">GitHub</a></h3>
+                <div class="project-type">AI Voice Assistant</div>
+                <div class="project-images">
+                    <img src="public/SirixaStart.png" alt="Sirixa Start Screen" class="project-image focus-bottom">
+                    <img src="public/SirixaChat.png" alt="Sirixa Chat Interface" class="project-image">
+                </div>
+                <p>AI-powered voice assistant built with Gemini OpenAI API, providing intelligent conversational capabilities and task automation.</p>
+            </div>
         </section>
 
         <!-- Honors & Extracurricular Section -->
@@ -196,9 +239,15 @@
                 <ul>
                     <li>Upsilon Pi Epsilon (UPE): Inducted into the Honor Society of UPE, recognized as one of the top 1% of computer Science students for outstanding academic performance and professional development. (Fall 2024 - Present)</li>
                     <li>ACM (Association for Computing Machinery) member: Engaged in Hackathons and tech-focused events</li>
-                    <li>AI/ML Fellow at Cornell Tech: Selected as AI/ML fellow through Break Through Tech Virtual AI program</li>
                     <li>Dean's List recipient (UTA College of Engineering): Academic year 2022, 2023, 2024</li>
                 </ul>
+                <div class="leetcode-section">
+                    <h3>Consistent Problem Solving <a href="https://leetcode.com/u/AnmolAcharya/" target="_blank" rel="noopener noreferrer" class="leetcode-link">Leetcode Profile</a></h3>
+                    <div class="leetcode-images-horizontal">
+                        <img src="public/LeetcodeProfile.png" alt="LeetCode Dashboard" class="leetcode-img leetcode-dashboard-big">
+                        <img src="public/LeetcodeBadge.png" alt="LeetCode 50 Days Badge" class="leetcode-img leetcode-badge-small">
+                    </div>
+                </div>
             </div>
         </section>
 
