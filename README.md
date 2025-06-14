@@ -45,7 +45,7 @@ To improve security further:
 
 ---
 
-##Infrastructure as Code (IaC) [In Process]
+## Infrastructure as Code (IaC) [In Process]
 
 Terraform is used for automating the provisioning of AWS resources, ensuring:
 - Reproducibility
