@@ -4,7 +4,7 @@ async function updateCounter() {
     try {
         let response = await fetch("https://5p0kww6arc.execute-api.us-east-2.amazonaws.com/prod/views");
         let data = await response.json();
-        counter.innerText = `Views: ${data.views}`;  // ✅ FIXED
+        counter.innerText = `Views: ${data.views}`;  // FIXED
         console.log("Visitor count data:", data);
     } catch (err) {
         console.error("Error fetching view count:", err);
